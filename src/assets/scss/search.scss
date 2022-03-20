@@ -1,0 +1,17 @@
+.search{
+    margin: 30px 0 20px 0;
+    padding: 0 20px;
+
+    input{
+        display: block;
+        max-width: 600px;
+        width: calc(100% - 42px);
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin: 0 auto;
+        font-size: 17px;
+        border: 1px solid #555;
+        border-radius: 3px;
+    }
+}

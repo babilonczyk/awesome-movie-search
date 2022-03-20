@@ -1,0 +1,140 @@
+.movie-list{
+ 
+    
+    .movie-list-center{
+        max-width: 1400px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 160px;
+        column-gap: 20px;
+        row-gap: 20px;
+
+        @media only screen and (max-width: 1400px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media only screen and (max-width: 700px) {
+            grid-template-columns: 1fr 1fr ;
+        }
+
+        @media only screen and (max-width: 500px) {
+            grid-template-columns: 1fr; 
+        }
+
+        .movie-item-wrapper{
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            .movie-item{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 2px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                cursor: pointer;
+                
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px, rgba(0, 0, 0, 0.1) 0px 5px 10px;
+                }
+    
+                .movie-item-img{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%; 
+                    object-fit: cover;
+                    top: 0;
+                    left:0;
+                    border-radius: 2px;
+                }
+    
+                .movie-item-year{
+                    position: absolute;
+                    bottom: 32px;
+                    left: 7px;
+                    max-width: calc( 100% - 14px);
+                    font-size: 12px;
+                    color: #fff;
+                    text-shadow:
+                        -1px -1px 0 #000,
+                        0   -1px 0 #000,
+                        1px -1px 0 #000,
+                        1px  0   0 #000,
+                        1px  1px 0 #000,
+                        0    1px 0 #000,
+                        -1px  1px 0 #000,
+                        -1px  0   0 #000;
+                    
+                }
+    
+                .movie-item-title{
+                    position: absolute;
+                    bottom:27px;
+                    left: 7px;
+                    max-width: calc( 100% - 14px);
+                    font-size: 18px;
+                    color: #fff;
+                    text-shadow:
+                        -1px -1px 0 #000,
+                        0   -1px 0 #000,
+                        1px -1px 0 #000,
+                        1px  0   0 #000,
+                        1px  1px 0 #000,
+                        0    1px 0 #000,
+                        -1px  1px 0 #000,
+                        -1px  0   0 #000;
+                    }
+    
+                .more-information{
+                    position: absolute;
+                    bottom: 0; 
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    height: 25px; 
+                    background: #fff;
+                    //border: 1px solid rgb(118, 129, 133);
+                    width: 100%; 
+                    border-radius: 0 0 2px 2px;
+    
+                    .genre{
+                        text-align: left;
+                        padding-left: 10px;
+                        line-height: 25px;
+                    }
+    
+                    .rating{
+                        text-align: right;
+                        padding-right: 10px;
+                        line-height: 25px;
+                        color: rgba(224, 224, 45, 0.959);
+                        font-weight: 600;
+                        font-size: 15px;
+                        display: grid;
+                        grid-template-columns:1fr auto auto;
+                        column-gap: 5px;
+    
+                        span{
+                            line-height: 25px;
+                            font-size: 15px;
+                        }
+    
+                        svg{
+                            margin-top: 4px;
+                            display: block;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+
+            @import 'modal';
+        }
+    }
+}

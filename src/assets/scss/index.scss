@@ -1,0 +1,21 @@
+html, body{
+    margin: 0;
+    padding: 0;  
+  
+    //Set fonts
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wg t@100;200;300;400;500;600;700;800&display=swap');
+    font-family: 'Sora', sans-serif;
+} 
+
+.App{  
+    max-width: 1400px; 
+    width: calc(100% - 40px);  
+    margin: 0 auto; 
+    padding: 40px 20px 20px 20px;
+   
+    @import 'header';
+    @import 'search';
+    @import 'message'; 
+    @import 'loader';
+    @import 'movieList';
+}  

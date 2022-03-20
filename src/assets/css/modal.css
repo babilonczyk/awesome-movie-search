@@ -1,0 +1,102 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .modal .modal-outer-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 12, 14, 0.623);
+    z-index: 1;
+    padding: 0;
+    width: 100%; }
+  .modal .modal-content {
+    position: fixed;
+    display: grid;
+    max-width: 700px;
+    min-height: 400px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 2px;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr;
+    z-index: 2; }
+    .modal .modal-content .modal-content-top {
+      padding: 20px; }
+      .modal .modal-content .modal-content-top .react-tabs {
+        padding-bottom: 0;
+        margin-bottom: 0; }
+        .modal .modal-content .modal-content-top .react-tabs ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          list-style-type: none;
+          padding: 0; }
+          .modal .modal-content .modal-content-top .react-tabs ul li {
+            list-style: none;
+            text-align: center;
+            border-bottom: 1px solid #666;
+            cursor: pointer; }
+            .modal .modal-content .modal-content-top .react-tabs ul li.react-tabs__tab--selected {
+              border: 1px solid #666;
+              border-bottom: none;
+              line-height: calc(100% - 1px); }
+      .modal .modal-content .modal-content-top h5 {
+        margin: 20px 0 10px 0; }
+      .modal .modal-content .modal-content-top .modal-content-img {
+        display: block;
+        width: 220px;
+        height: auto;
+        margin: 0 auto; }
+      .modal .modal-content .modal-content-top .modal-content-description {
+        text-align: left;
+        padding: 5px 20px;
+        width: calc(100%-40px);
+        max-height: 140px;
+        overflow-y: scroll;
+        background: rgba(234, 241, 241, 0.6); }
+      .modal .modal-content .modal-content-top .modal-content-actors {
+        text-align: left;
+        padding: 5px 20px;
+        max-height: 140px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: rgba(234, 241, 241, 0.6); }
+        .modal .modal-content .modal-content-top .modal-content-actors ul {
+          border: none;
+          list-style-position: inside; }
+          .modal .modal-content .modal-content-top .modal-content-actors ul li {
+            border: none;
+            margin: 5px 0 5px 10px;
+            list-style: circle;
+            text-align: left; }
+    .modal .modal-content .select-stars {
+      width: 240px;
+      margin: 0 auto;
+      padding: 10px 0; }
+      .modal .modal-content .select-stars select {
+        background-color: #feffbf;
+        border-radius: 15px;
+        padding: 0 4px; }
+      .modal .modal-content .select-stars span:first-of-type {
+        padding-right: 5px; }
+      .modal .modal-content .select-stars span:last-of-type {
+        padding-left: 5px; }
+      .modal .modal-content .select-stars button {
+        margin-top: 10px; }
+    .modal .modal-content button {
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #999;
+      outline: none;
+      width: 100%;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 0 0 2px 2px; }
+      .modal .modal-content button:hover {
+        background-color: #ebf2f5;
+        border: 1px solid #666; }
